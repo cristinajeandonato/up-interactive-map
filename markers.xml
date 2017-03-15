@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<markers>
+  <marker name="Administration Building" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.322302" lng="123.898224" type="building"/>
+  <marker name="Health Services Building" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.322219" lng="123.897926" type="health services"/>
+  <marker name="UP Cebu Dormitory" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.321882" lng="123.897530" type="housing"/>
+  <marker name="UP Cebu Dormitory Extension" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.322103" lng="123.897537" type="housing"/>
+  <marker name="UP Cebu Main Canteen" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.322004" lng="123.897987" type="dining"/>
+  <marker name="UP Cebu Library" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.321393" lng="123.897995" type="library"/>
+  <marker name="UP Cebu Guest House" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.321624" lng="123.897697" type="housing"/>
+  <marker name="Oble Square" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.322455" lng="123.898514" type="landmark"/>
+  <marker name="Management Building" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.322782" lng="123.897736" type="building"/>
+  <marker name="UP Cebu Basketball Court" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.322729" lng="123.897919" type="recreation"/>
+  <marker name="Undergraduate Building" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.323370" lng="123.897896" type="building"/>
+  <marker name="UP Cebu Tennis Court" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.323202" lng="123.898300" type="recreation"/>
+  <marker name="Guard House 1" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.321846" lng="123.898788" type="guard house"/>
+  <marker name="Guard House 2" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.322925" lng="123.898552" type="guard house"/>
+  <marker name="Arts &amp; Sciences Building" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.323280" lng="123.899475" type="building"/>
+  <marker name="Cebu Cultural Center" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.322549" lng="123.899193" type="building"/>
+  <marker name="UP Football Field" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.322773" lng="123.899826" type="recreation"/>
+  <marker name="UP Cebu Softball Field" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.321566" lng="123.898537" type="recreation"/>
+  <marker name="Kiosks 1" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.321923" lng="123.898293" type="hangout"/>
+  <marker name="Kiosks 2" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.322719" lng="123.898148" type="hangout"/>
+  <marker name="Kubo" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.323194" lng="123.899300" type="hangout"/>
+  <marker name="UP Arts and Sciences Parking Lot" address="UP Cebu, Gorodo Avenue, Cebu City, 6000 Cebu" lat="10.323044" lng="123.898903" type="parking"/>
+</markers>

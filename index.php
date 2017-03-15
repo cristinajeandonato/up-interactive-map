@@ -6,6 +6,8 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" href="img/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="stylesheet" href="style.css">
+  <script src="map.js"></script>
 </head>
 <body>
   <div id="page">
@@ -13,14 +15,21 @@
       <img id="logo" src="img/up-logo.png" alt="UP Logo"/>
       <h1>UP Cebu Interactive Map</h1>
     </header>
-    <section id="map"></section>
+    <section id="map">
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqADMedo8IANqA7GhkoMzQwexzoSK2quQ&callback=initMap">
+      </script>
+    </section>
     <section id="bot">
+      <img id="bot-avatar" src="img/robot-avatar.svg"/>
+      <div id="bot-response"></div>
       <form>
         <input type="text" name="userQuery"/>
       </form>
     </section>
+    <nav>
+
+    </nav>
     <footer></footer>
-    <nav></nav>
   </div>
 </body>
 </html>
