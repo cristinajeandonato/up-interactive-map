@@ -10,15 +10,14 @@ var customIcons = {
   },
   library: {
     icon: 'http://maps.google.com/mapfiles/ms/icons/purple.png'
-  }
+  },
+  recreation: {
+    icon: 'http://maps.google.com/mapfiles/ms/icons/orange.png'
+  },
 };
 
-var markerCategories = {
-  "bulding": [],
-  "parking": [],
-  "housing": [],
-  "library": []
-};
+var allMarkers = [];
+var markerCategories = {};
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
@@ -66,13 +65,17 @@ function createMarker(point, name, address, type, map) {
     // shadow: icon.shadow,
     type: type
   });
-  if (!markerCategories[type]) markerCategories[type] = [];
+  //create marker category if there is none
+  if (!markerCategories[type]){
+    markerCategories[type] = [];
+  } 
+  allMarkers.push(marker);
   markerCategories[type].push(marker);
   return marker;
 }
 
 function toggleGroup(type) {
-  for (var i = 0; i < markerCategories[type].length; i++) {
+  for (var i = 0; i < markerCategories[type].length; i++){
     var marker = markerCategories[type][i];
     if (!marker.getVisible()) {
       marker.setVisible(true);
@@ -82,12 +85,25 @@ function toggleGroup(type) {
   }
 }
 
-function bindInfoWindow(marker, map, infoWindow, html) {
-  google.maps.event.addListener(marker, 'click', function() {
+function bindInfoWindow(marker, map, infoWindow, html){
+  google.maps.event.addListener(marker, 'click', function(){
     infoWindow.setContent(html);
     infoWindow.open(map, marker);
-
   });
+}
+
+function hideMarkers(){
+  for(var i = 0; i < allMarkers.length; i++){
+    var marker = allMarkers[i];
+    marker.setVisible(false);
+  }
+}
+
+function showMarkers(){
+  for(var i = 0; i < allMarkers.length; i++){
+    var marker = allMarkers[i];
+    marker.setVisible(true);
+  }
 }
 
 function downloadUrl(url, callback) {

@@ -29,7 +29,8 @@
     <nav>
 
     </nav>
-    <!-- <input onclick="clearMarkers();" type=button value="Hide Markers"> -->
+    <input onclick="hideMarkers();" type=button value="Hide Markers">
+    <input onclick="showMarkers();" type=button value="Show Markers">
     <input type="checkbox" id="parkingCheckbox" onclick="toggleGroup('parking')" checked />parking
     <input type="checkbox" id="buildingCheckbox" onclick="toggleGroup('building')" checked />building
     <footer></footer>
