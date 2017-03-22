@@ -31,8 +31,8 @@
     </nav>
     <input onclick="hideMarkers();" type=button value="Hide Markers">
     <input onclick="showMarkers();" type=button value="Show Markers">
-    <input type="checkbox" id="parkingCheckbox" onclick="toggleGroup('parking')" checked />parking
-    <input type="checkbox" id="buildingCheckbox" onclick="toggleGroup('building')" checked />building
+    <input type="checkbox" id="parkingCheckbox" class="markerCategory" onclick="toggleGroup('parking')" checked="checked" />parking
+    <input type="checkbox" id="buildingCheckbox" class="markerCategory" onclick="toggleGroup('building')" checked="checked" />building
     <footer></footer>
   </div>
 </body>

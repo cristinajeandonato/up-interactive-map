@@ -16,8 +16,8 @@ var customIcons = {
   },
 };
 
-var allMarkers = [];
-var markerCategories = {};
+var allMarkers = []; // holds all markers
+var markerCategories = {}; //holds markers per category
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById("map"), {
@@ -27,7 +27,7 @@ function initMap() {
   });
   var infoWindow = new google.maps.InfoWindow();
 
-  downloadUrl("markersSqlToXml.php", function (data) {
+  downloadUrl("markersXml.php", function (data) {
     var xml = data.responseXML;
     var markers = xml.documentElement.getElementsByTagName("marker");
     for (var i = 0; i < markers.length; i++) {
@@ -38,18 +38,17 @@ function initMap() {
       parseFloat(markers[i].getAttribute("lat")),
       parseFloat(markers[i].getAttribute("lng")));
 
-      var infowincontent = document.createElement('div');
-      var strong = document.createElement('strong');
-      strong.textContent = name
-      infowincontent.appendChild(strong);
-      infowincontent.appendChild(document.createElement('br'));
+      // var infowincontent = document.createElement('div');
+      // var strong = document.createElement('strong');
+      // strong.textContent = name
+      // infowincontent.appendChild(strong);
+      // infowincontent.appendChild(document.createElement('br'));
 
-      var text = document.createElement('text');
-      text.textContent = address
-      infowincontent.appendChild(text);
+      // var text = document.createElement('text');
+      // text.textContent = address
+      // infowincontent.appendChild(text);
 
-      var html = "<b>" + name + "</b> <br/>" + address;
-      //var icon = customIcons[type] || {};
+      var html = "<span style=\"font-weight: bold\">" + name + "</span> <br/>" + address;
       var marker = createMarker(point, name, address, type, map);
       bindInfoWindow(marker, map, infoWindow, html);
     }
@@ -97,12 +96,22 @@ function hideMarkers(){
     var marker = allMarkers[i];
     marker.setVisible(false);
   }
+  //document.getElementById("parkingCheckbox").checked = false;
+  //get all element with markerCategory class name and uncheck them
+  var checkboxes = document.getElementsByClassName("markerCategory");
+  for(var i = 0; i < checkboxes.length; i++){
+    checkboxes[i].checked = false;
+  }
 }
 
 function showMarkers(){
   for(var i = 0; i < allMarkers.length; i++){
     var marker = allMarkers[i];
     marker.setVisible(true);
+  }
+  var checkboxes = document.getElementsByClassName("markerCategory");
+  for(var i = 0; i < checkboxes.length; i++){
+    checkboxes[i].checked = true;
   }
 }
 
